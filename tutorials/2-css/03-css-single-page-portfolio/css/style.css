@@ -10,15 +10,24 @@ html {
 }
 
 /* general css */
+html {
+    scroll-behavior: smooth;
+}
 
 body {
 
     background: #ff0000;
     background: radial-gradient(circle, rgba(255, 0, 0, 0.77) 0%, rgba(0, 0, 0, 0.77) 100%);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Limelight", sans-serif;
     font-size: 1.3rem;
     line-height: 1.5;
     color: rgb(0, 0, 71);
+     text-align: center;
+}
+
+@media(max-width: 700px) {
+
+    body {font-size: 1.3rem;}
 }
 
 header {
@@ -32,8 +41,18 @@ header {
     border: 5px rgb(1, 23, 51) solid;
 }
 
+@media(max-width: 700px) {
+    header{
+        padding-right: 2rem;
+    }
+}
+
+
 header h1 {
     font-size: 2.6rem;
+    text-decoration: underline;
+    text-decoration-style: double;
+    text-decoration-color: #130300;
 }
 
 nav {
@@ -48,8 +67,26 @@ nav {
 nav a {
     text-decoration: none;
     color: antiquewhite;
-    display:inline-block;
+    display: inline-block;
     margin: 0 1rem;
+    transition: all .7s ease;
+
+}
+
+
+
+nav a:hover {
+    color: #FF8975;
+    transform: scale(1.1);
+
+
+
+}
+
+@media(max-width: 750px){
+    nav a {
+        margin: 0 .5rem;
+    }
 }
 
 .about-section {
@@ -92,6 +129,10 @@ nav a {
 .porfolio-content h3,
 .contact-content h3 {
     padding: 1rem;
+    background-color: #ee8a8a;
+    border-radius: .8rem;
+    display: inline-block;
+    margin: 1rem;
 
 }
 
@@ -99,12 +140,27 @@ nav a {
     margin-bottom: 4rem;
     background-color: rgb(209, 233, 255);
     padding: 2rem;
-    text-align: center;
     border-radius: .5rem;
     box-shadow: 0 4px 6px rgba(255, 255, 255, 0.5);
 }
 
-.porfolio-item img {
+@media (max-width: 800px){
+
+    .porfolio-item{
+        padding: 3rem;
+    }
+}
+
+@media (max-width: 650px){
+
+    .porfolio-item{
+        padding: 2rem;
+    }
+}
+
+
+
+.porfolio-item img, .porfolio-item video {
     max-width: 100%;
     margin: 0 auto;
     display: block;
@@ -136,4 +192,8 @@ footer {
     margin: 2rem;
     background-color: #333;
     padding: .5rem;
+}
+
+.accent-1 {
+    color: #770202;
 }
