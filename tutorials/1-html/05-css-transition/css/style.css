@@ -1,0 +1,90 @@
+body {
+    animation: change-color 3s infinite alternate;
+}
+
+@keyframes change-color {
+    0% {
+        background-color: rgb(41, 90, 74);
+    }
+
+    50% {
+        background-color: rgb(127, 127, 238)violet;
+    }
+
+    100% {
+        background-color: rgb(223, 145, 145);
+    }
+}
+
+
+.title {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    margin-top: 100px auto;
+    animation: skew 3s infinite alternate;
+}
+
+@keyframes skew {
+    0% {
+        transform: skew(0deg, 0deg);
+    }
+
+    100% {
+        transform: skew(30deg, 20deg);
+    }
+}
+
+.square {
+    background-color: blueviolet;
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    border-radius: 20px;
+    margin: 50px auto;
+    transition: all 1s
+}
+
+.square:hover {
+    background-color: bisque;
+    transform: rotate(360deg);
+}
+
+.button-div {
+    text-align: center;
+}
+
+.button {
+    padding: 15px;
+    color: aliceblue;
+    background-color: rgb(39, 104, 82);
+    margin: 50px auto;
+    display: block;
+    width: 100px;
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: underline;
+    transition: all 1s;
+    display: inline-block;
+}
+
+.button:hover {
+    background-color: brown;
+    transform: scale(1.1);
+}
+
+.loading {
+    background-color: cadetblue;
+    animation: stretch 5s 3 normal;
+}
+
+@keyframes stretch {
+    0% {
+        width: 100px;
+    }
+
+    100% {
+        width: 80vw;
+    }
+
+    ;
+}

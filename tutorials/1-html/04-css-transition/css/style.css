@@ -1,0 +1,41 @@
+.title {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.square {
+    background-color: blueviolet;
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    border-radius: 20px;
+    margin: 50px auto;
+    transition: all 3s
+}
+
+.square:hover {
+    background-color: bisque;
+    transform: rotate(360deg);
+}
+
+.button-div {
+    text-align: center;
+}
+
+.button {
+    padding: 15px;
+    color: aliceblue;
+    background-color: aquamarine;
+    margin: 50px auto;
+    display: block;
+    width: 100px;
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: underline;
+    transition: all 1s;
+    display: inline-block;
+}
+
+.button:hover {
+    background-color: brown;
+    transform: scale(1.1);
+}
